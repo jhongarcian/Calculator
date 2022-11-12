@@ -73,7 +73,8 @@ export default class Calculator {
                 result = parseFloat(this.secondaryOperandDisplay.textContent) + parseFloat(this.primaryOperandDisplay.textContent)
                 break
             case "-":
-                result = this.secondaryOperandDisplay.textContent - this.primaryOperandDisplay.textContent
+                result = parseFloat(this.secondaryOperandDisplay.textContent) - parseFloat(this.primaryOperandDisplay.textContent)
+                break
             default:
                 result = ""
         }
